@@ -11,8 +11,6 @@ export default (props) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-
-
   const numbers = [];
   const handleClick = () => {
     //clean the array
@@ -23,6 +21,7 @@ export default (props) => {
 
       while (numbers.indexOf(numberGenerated) !== -1) {
         numberGenerated = getRandomNumber()
+        // console.log('Numero repetido ' + numberGenerated);
       }
 
       numbers.push(numberGenerated);

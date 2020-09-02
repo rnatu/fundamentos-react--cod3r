@@ -3,17 +3,19 @@ import Sub from './Sub';
 
 export default (props) => {
   const [num, setNum] = useState(0);
-  const [label, setLabel] = useState('Gerar');
 
   function click(valorGerado, text) {
     setNum(valorGerado);
-    setLabel(text);
+
   }
 
   return (
     <div>
+      <h3>
+      Gerar número de 1 a 100
+      </h3>
       <h1>
-        {label}: {num}
+      {num}
       </h1>
       <Sub onClicar={click} />
     </div>

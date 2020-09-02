@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default (props) => {
+
+
   return (
     <div>
       <label htmlFor="passoInput">Passo: </label>
@@ -9,7 +11,9 @@ export default (props) => {
         id="passoInput"
         type="number"
         value={props.passo}
-        onChange={(e) => props.onPassoChange(+e.target.value)}
+        onChange={(e) => {
+          return props.onPassoChange(+e.target.value)}
+        }
       />
     </div>
   );
