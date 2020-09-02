@@ -26,6 +26,7 @@ export default class Contador extends Component {
   mudarPasso = (novoPasso) => {
     this.setState({
       passo: novoPasso,
+      valor: 0,
     });
   };
 
@@ -40,7 +41,7 @@ export default class Contador extends Component {
 
         <Display valor={valor} />
 
-        <Buttons inc={this.inc} dec={this.dec} />
+        <Buttons onInc={this.inc} onDec={this.dec} />
       </div>
     );
   }

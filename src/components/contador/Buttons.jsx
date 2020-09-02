@@ -3,10 +3,10 @@ import React from 'react';
 export default (props) => {
   return (
     <div>
-      <button type="button" onClick={props.inc} style={{ marginRight: '5px' }}>
+      <button type="button" onClick={props.onInc} style={{ marginRight: '5px' }}>
         +
       </button>
-      <button type="button" onClick={props.dec}>
+      <button type="button" onClick={props.onDec}>
         -
       </button>
     </div>

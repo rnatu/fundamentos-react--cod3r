@@ -12,11 +12,17 @@ import Pai from './components/comunicacao/direta/Pai';
 import Super from './components/comunicacao/indireta/Super';
 import Input from './components/form/Input';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 export default () => (
   <div className="Cards">
     <h1>Fundamentos do React</h1>
     <div className="App">
+
+      <Card titulo='#11 - Numeros da Mega-Sena' color="#a22222">
+        <Mega></Mega>
+      </Card>
+
       <Card titulo="#10 - Contador" color="#aaaa">
         <Contador />
       </Card>

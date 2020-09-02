@@ -9,10 +9,11 @@ export default (props) => {
       <input
         type="text"
         // value={defaultText}
-        onClick={(e) => {
-          e.target.value = '';
-        }}
         onChange={(e) => {
+          if(e.target.value === '') {
+            setText('Insira um texto');
+            return;
+          }
           setText(e.target.value);
         }}
       />
